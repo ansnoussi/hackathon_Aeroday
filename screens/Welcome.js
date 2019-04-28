@@ -74,7 +74,14 @@ export default class Welcome extends Component {
   }
 
   renderAwards() {
+
+    const { navigation } = this.props;
+
     return (
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => navigation.navigate("Music")}
+      >
       <LinearGradient
         end={{ x: 1, y: 0 }}
         style={[blockStyles.row, cardStyles.card, styles.awards ]}
@@ -92,6 +99,7 @@ export default class Welcome extends Component {
           <Text size={theme.sizes.base -2 } spacing={0.4} medium white>Discover this country</Text>
         </Block>
       </LinearGradient>
+      </TouchableOpacity>
     )
   }
 
