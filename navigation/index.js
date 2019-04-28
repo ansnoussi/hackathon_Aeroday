@@ -6,6 +6,8 @@ import Rewards from '../screens/Rewards';
 import Trip from '../screens/Trip';
 import Chat from '../screens/Chat';
 import Music from '../screens/Music';
+import GameLoginScreen from "../app/screens/Login";
+import GameScreen from "../app/screens/Game";
 
 import { theme } from '../constants';
 
@@ -14,7 +16,9 @@ const screens = createStackNavigator({
   Rewards,
   Trip,
   Chat,
-  Music
+  Music,
+  GameLoginScreen,
+  GameScreen
   
 }, {
   defaultNavigationOptions: {
